@@ -1,0 +1,65 @@
+.offer{
+    text-align: center;
+    background-color: #460132;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    height: auto !important;
+    padding: 0% !important;
+    color: white;
+    position:relative;
+}
+
+.nav-link {
+    font-weight: bold;
+color: #0d4b90;    
+font-size: 20px;
+}
+
+.navbar-nav .nav-link.active {
+color: #fa9521;   
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.logoImag {
+    position: relative;
+    width: 50%;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.nav-item{
+    margin: 10px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav-item:hover {
+    color: var(--primary-hover);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.header-button {
+  white-space: nowrap;  /* Prevent text from wrapping */
+  padding: 8px 16px;    /* Give enough space inside button */
+  display: inline-block;
+      font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+@media only screen and (max-width: 480px) {
+
+  /* Styles for small phones */
+ 
+}

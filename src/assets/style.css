@@ -1,0 +1,20 @@
+
+.container {
+  width: 90%; /* instead of fixed 1200px */
+  max-width: 1200px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .menu {
+    display: none; /* hide big menu, maybe use burger icon */
+  }
+}
+

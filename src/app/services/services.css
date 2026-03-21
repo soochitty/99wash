@@ -1,0 +1,58 @@
+.services-container {
+  padding: 30px;
+  background-color: white;
+}
+.subtitle {
+  color: gray;
+}
+.service-cards .service-card {
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* optional, makes it clear it's interactive */
+}
+
+.service-card:hover{
+background-color: rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+transform: scale(1.05); /* slightly bigger */
+  box-shadow: 0 12px 20px rgba(0,0,0,0.3); /* stronger shadow */
+  z-index: 10; /* makes sure it pops above other elements */
+}
+
+.service-icon {
+  font-size: 40px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.title-header {
+color: var(--secondary-color);
+font-weight: 700;
+}
+
+table {
+  background-color: transparent;
+}
+
+.about-header{
+  position: relative;
+  width: 100%;
+  background-image: url('../../assets/Images/header.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.681);
+  /* 0.4 = 40% darkness */
+}
+
+th {
+  font-weight: bold;
+}

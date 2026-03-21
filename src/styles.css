@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: var(--font-family);
+  font-size: var(--body-font-size);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+}
+
+p {
+  margin: 0px;
+}
+
+
+:root {
+  /* Colors */
+  --primary-color: #cffffd;
+  --icon-color: #dc7704;
+  --primary-hover: #8E6582;
+  --luxuryText-color: #FFD700;
+  --green-hover: rgb(0, 255, 0);
+  --green-color: rgb(34, 138, 34);
+  --secondary-color: #fa9521;
+  --background-color: #F8F9FA;
+  --text-color: #0d4b90;
+
+  /* Typography */
+  --font-family: 'Roboto', sans-serif;
+  --heading-font-size: 2rem;
+  --body-font-size: 1rem;
+
+  /* Spacing */
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+
+  /* Borders & Radius */
+  --border-radius: 8px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: url('assets/Images/body-back.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+button {
+  background-color: var(--green-color);
+  /* Blue */
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px !important;
+  /* Rounded corners */
+  cursor: pointer;
+}
+
+button.button:hover {
+  background-color: var(--green-hover);
+  /* Darker blue on hover */
+}
+
+.header1 {
+  text-align: center;
+  padding: 10px;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.pageheader {
+  color: white;
+  z-index: 10;
+}
+
+tr {
+  height: 40px;
+}
+
+td,
+th {
+  padding: 10px 10px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+@media only screen and (max-width: 480px) {
+
+  /* Styles for small phones */
+  body {
+    /* background-image: none; */
+    /* background-color: white; */
+  }
+}

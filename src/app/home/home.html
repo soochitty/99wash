@@ -1,0 +1,165 @@
+
+<app-header (openBookNow)="bookPickupForm.openPopup()"></app-header>
+
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active"
+      style="background-image: url('../../assets/Images/banner1.jpg'); height:500px; background-size:cover;">
+      <div class="overlay"></div>
+      <div class="carousel-caption">
+        <h1>Laundry Made Easy.</h1>
+        <p style="font-size: 20px;">Doorstep laundry & dry cleaning across Mumbai and Navi Mumbai. Pickup. Clean. Deliver.</p>
+        <button class="button" (click)="bookPickupForm.openPopup()">Book Now!</button>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('../../assets/Images/banner1.png'); height:500px; background-size:cover;">
+      <div class="overlay"></div>
+      <div class="carousel-caption">
+        <h1>Your Laundry. Our Care.</h1>
+        <p style="font-size: 20px;">Premium washing, dry cleaning & ironing — with fast delivery and guaranteed freshness.</p>
+        <button class="button" (click)="bookPickupForm.openPopup()">Book Now!</button>
+
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<app-service-card></app-service-card>
+
+
+<!------------- service offer  ---------------->
+<!-- <section class=" sec services-section container">
+  <div>
+  <h2 class="text-center" style="font-size: 40px !important;color: var(--primary-color);">Best in Class Laundry Services in Mumbai</h2>
+  <p class="text-center text-muted" style="color: white !important;">
+    Premium laundry and dry cleaning for busy Mumbaikars. We pick up, clean, and deliver while you enjoy your day.
+  </p>
+
+  <div class="row align-items-center mt-4">
+    Left Column - Service List
+    <div class="col-md-4 service-offer">
+      <ul class="list-unstyled service-list">
+         <li class="mb-3">
+          <h2><img src="../../assets/Images/icons/machine (2).png" class="icon"> Dry Cleaning</h2>
+
+          <p class="icon-des">Starts @ ₹99/-pc*</p>
+        </li>
+        <li class="mb-3">
+          <h2><img src="../../assets/Images/icons/iron (2).png" class="icon"> Steam Iron</h2>
+          <p class="icon-des">₹29/-pc*</p>
+        </li>
+          <li class="mb-3">
+          <h2><img src="../../assets/Images/icons/shoe (2).png" class="icon"> Shoes Laundry</h2>
+
+          <p class="icon-des">Starts @ ₹299/-pair</p>
+        </li>
+        <li class="mb-3">
+          <h2><img src="../../assets/Images/icons/folded (2).png" class="icon"> Wash & Fold</h2>
+          <p class="icon-des">₹99/-Kg</p>
+        </li>
+        <li class="mb-3">
+          <h2><img src="../../assets/Images/icons/steam-iron (2).png" class="icon"> Wash & Iron</h2>
+
+          <p class="icon-des">₹149/-Kg</p>
+
+        <li class="mb-3">
+          <h2><img src="../../assets/Images/icons/express (2).png" class="icon"> Express Laundry</h2>
+
+          <p class="icon-des">In 48 hrs</p>
+        </li>
+      
+       
+        
+      </ul>
+    </div>
+
+    Middle Column - Image
+    <div class="col-md-4 text-center " >
+      <img src="../../assets/Images/service-offer.jpg" style="padding: 0%;" alt="Laundry Service" class="img-fluid rounded service-offer">
+    </div>
+
+    Right Column - Offer
+    <div class="col-md-4 text-center  service-offer">
+      <div class="p-4 bg-light rounded shadow-sm">
+        <h4>
+          Enjoy <span class="text-danger">10% OFF</span><br>
+          on Your First Order Above<br>
+          <span class="text-danger">₹1000</span>
+        </h4>
+        <button class=" button mt-3">Book Now</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</section> -->
+<!-- -----------------end  ------------->
+
+
+<app-offer-marquee></app-offer-marquee>
+<!----------------- our process --------------->
+<section class=" sec process-section container text-center py-5">
+  <div>
+  <p class="text-muted" style="font-size: 31px;
+    color: var(--primary-color) !important;
+    font-weight: bold;">Working Process</p>
+  <h2 class="fw-bold mb-5" style="color: white;">Our Process in Four Easy Steps</h2>
+
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="process-card d-flex align-items-center p-3 shadow-sm rounded">
+        <div class="icon-box me-3">
+          <i class="bi bi-basket-fill"></i>
+        </div>
+        <p class="mb-0 fw-semibold">
+          Step 1 - Gather Your Garments And Bag Them Up.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="process-card d-flex align-items-center p-3 shadow-sm rounded">
+        <div class="icon-box me-3">
+          <i class="bi bi-truck"></i>
+        </div>
+        <p class="mb-0 fw-semibold">
+          Step 2 - Our Team Picks Up Your Laundry
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="process-card d-flex align-items-center p-3 shadow-sm rounded">
+        <div class="icon-box me-3">
+          <i class="bi bi-stars"></i>
+        </div>
+        <p class="mb-0 fw-semibold">
+          Step 3 - Your Laundry Is Expertly Cleaned By Our Professionals.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="process-card d-flex align-items-center p-3 shadow-sm rounded">
+        <div class="icon-box me-3">
+          <i class="bi bi-house-check"></i>
+        </div>
+        <p class="mb-0 fw-semibold">
+          Step 4 - We Deliver Your Freshly Cleaned And Neatly Folded Clothes Right To Your Doorstep.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<!------------------ end  ----------------------->
+<app-book-pick-up-form></app-book-pick-up-form>
+<app-footer></app-footer>

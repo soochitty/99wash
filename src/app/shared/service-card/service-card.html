@@ -1,0 +1,33 @@
+<div class="service">
+
+  <h1 class="header1">99 WASH Services</h1>
+  <p style="    text-align: center;
+    font-size: 18px;
+    padding: 5px 10%; color: white;">We at 99Wash offer premium laundry and dry cleaning services with doorstep pickup
+    and delivery across Mumbai & Navi Mumbai. Experience fresh, clean, and neatly folded clothes — hassle-free.</p>
+
+  <div class="row card-scroll-container" #cardContainer>
+
+    <div class="col-sm-3 mb-3 mb-sm-0" *ngFor="let card of services">
+      <div class="card">
+        <div class="services-top">
+          <span class="service-icon DrycleanIcon"><img [src]="card.image" class="card-img-top" alt="..."></span>
+          <div class="price-box"><span class="startText text-black">Starts at </span><span
+              class="dcRate">₹{{card.price}}<sup>*</sup></span><sup></sup><sub>/{{card.unit}}</sub>
+            <span class="tncApply">Without Tax</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{card.title}}</h5>
+          <p class="card-text">{{card.description}}</p>
+          <div class="card-button"
+  >
+            <button href="#" class="button">Book Now</button>
+            <a [routerLink]="['/services']" fragment="{{card.link}}">View Rate List</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

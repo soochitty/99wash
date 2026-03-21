@@ -1,0 +1,69 @@
+<app-header></app-header>
+<section class="about-header text-center py-5 bg-light">
+  <h1 class="fw-bold">ABOUT US</h1>
+  <hr class="about-divider">
+</section>
+
+
+<section class="container py-5">
+  <div class="row align-items-center">
+    <!-- Left Image -->
+    <div class="col-md-5 text-center">
+      <img src="assets/images/laundry-pile.jpg" alt="Laundry Pile" class="img-fluid rounded shadow">
+    </div>
+
+    <!-- Right Content -->
+    <div class="col-md-7">
+      <h2 class="text-danger fw-bold">Our Story</h2>
+       <p>
+      At <strong>99 Wash</strong>, we believe laundry should be simple, affordable, and stress-free.
+      From busy professionals to large families, we help you save time by taking care of the clothes you love.
+    </p>
+       <p>
+      We started our journey with a simple goal — to make laundry pickup and delivery
+      as easy as ordering food online. What began as a small home-based service has
+      grown into a trusted name in <em>[Your City]</em>, known for our reliability and quality care.
+    </p>
+      <p>
+        Our laundry unit is located in Thakur Village, Kandivali (East), Mumbai.
+      </p>
+
+      <h3 class="text-danger fw-bold mt-4">Why Choose 99 Wash?</h3>
+      <p>
+        We always put our customers first. By combining the convenience of your local dhobi with
+        modern, high-quality equipment, we ensure that your clothes are cleaned, dried, and delivered
+        in perfect condition — every time.
+      </p>
+      <ul>
+      <li><strong>Free Pickup & Delivery</strong> — You relax, we collect and return your laundry.</li>
+      <li><strong>Affordable Prices</strong> — Premium care without breaking the bank.</li>
+      <li><strong>Expert Cleaning</strong> — Stubborn stains? No problem.</li>
+      <li><strong>Eco-Friendly</strong> — Safe for your clothes and the planet.</li>
+    </ul>
+
+
+      <!-- CTA -->
+      <a routerLink="/services" class="btn btn-danger mt-3">View Our Services</a>
+    </div>
+  </div>
+</section>
+<div class="about-us-container">
+  <div class="about-us-content">
+   
+    <h2>Our Mission</h2>
+    <p>
+      Our mission is simple: <strong>to deliver spotless, fresh laundry on time, every time</strong>,
+      using eco-friendly detergents and the latest cleaning technology.
+    </p>
+
+
+    <div class="cta-section">
+      <p>
+        Whether it’s your daily wear or delicate fabrics, let <strong>99 Wash</strong> handle the dirty work while you enjoy your day.
+      </p>
+      <button class="cta-btn" (click)="bookPickupForm.openPopup()">Book Your Laundry Pickup</button>
+    </div>
+  </div>
+</div>
+<app-book-pick-up-form></app-book-pick-up-form>
+<app-footer></app-footer>

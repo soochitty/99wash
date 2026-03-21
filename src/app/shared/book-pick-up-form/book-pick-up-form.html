@@ -1,0 +1,65 @@
+<!-- Button to open popup -->
+
+<!-- Popup modal -->
+<div class="modal-overlay" *ngIf="isVisible">
+    <div class="modal-card"  [class.closing]="isClosing" >
+        <span class="close-btn" (click)="closePopup()">×</span>
+         
+    <h2 class="title">Book your laundry with us now</h2>
+    <p class="subtitle">
+      For a quick booking Call or WhatsApp us on our registered number or fill up the form below
+      to schedule your pickup on same day in Navi Mumbai & Mumbai.
+    </p>
+
+    <div class="contact-options">
+      <div class="option">
+        <span class="icon">📞</span>
+        <strong>Book on Call</strong><br>
+        +91 9136967627
+      </div>
+      
+    </div>
+
+    <p class="offer">
+      Order Laundry worth ₹499 or More & Get FREE Pickup & Delivery
+    </p>
+
+
+        <form [formGroup]="pickupForm" (ngSubmit)="onSubmit()">
+            <div class="form-row">
+                <input type="text" formControlName="name" placeholder="Name" />
+                <select formControlName="service" class="form-select" aria-label="Book Time Slot">
+                    <option *ngFor="let service of services" value="service">{{service}}</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <input type="date" formControlName="pickupDate" />
+
+<select formControlName="timeSlot" class="form-select" aria-label="Book Time Slot">
+                    <option *ngFor="let time of timeSlot" value="time">{{time}}</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <input type="text" formControlName="phone" placeholder="Phone" />
+                <input type="email" formControlName="email" placeholder="Email" />
+            </div>
+            <div class="form-row">
+<input type="text" formControlName="city" placeholder="City" />
+            <input type="text" formControlName="pincode" placeholder="Pincode" />
+
+            </div>
+
+            <div class="form-row">
+<input type="text" formControlName="address" placeholder="address" />
+            </div>
+
+            <div class="form-row">
+<textarea class="form-control" placeholder="Leave a comment here" formControlName="laundryItems"></textarea>
+
+            </div>
+
+            <button type="submit" class="submit-btn">Pickup Now ! 🚚</button>
+        </form>
+    </div>
+</div>

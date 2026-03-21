@@ -1,0 +1,54 @@
+<app-header></app-header>
+<section class="about-header text-center py-5 bg-light">
+  <h1 class="fw-bold">CONTACT US</h1>
+  <hr class="about-divider">
+</section>
+
+<div class="contact-container">
+  <h2>Contact Us</h2>
+  <p>We’d love to hear from you. Please fill out the form below.</p>
+
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <!-- Name -->
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" formControlName="name" placeholder="Enter your name" />
+      <div class="error" *ngIf="submitted && f['name'].errors">
+        Name is required
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" formControlName="email" placeholder="Enter your email" />
+      <div class="error" *ngIf="submitted && f['email'].errors">
+        <span *ngIf="f['email'].errors['required']">Email is required</span>
+        <span *ngIf="f['email'].errors['email']">Enter a valid email</span>
+      </div>
+    </div>
+
+    <!-- Subject -->
+    <div class="form-group">
+      <label>Subject</label>
+      <input type="text" formControlName="subject" placeholder="Enter subject" />
+      <div class="error" *ngIf="submitted && f['subject'].errors">
+        Subject is required
+      </div>
+    </div>
+
+    <!-- Message -->
+    <div class="form-group">
+      <label>Message</label>
+      <textarea formControlName="message" placeholder="Type your message"></textarea>
+      <div class="error" *ngIf="submitted && f['message'].errors">
+        <span *ngIf="f['message'].errors['required']">Message is required</span>
+        <span *ngIf="f['message'].errors['minlength']">Minimum 10 characters</span>
+      </div>
+    </div>
+
+    <button type="submit" class="btn-submit">Send Message</button>
+  </form>
+</div>
+
+<app-footer></app-footer>
