@@ -4,13 +4,15 @@ import { Home } from './home/home';
 import { Services } from './services/services';
 import { AboutUs } from './about-us/about-us';
 import { ContactUs } from './contact-us/contact-us';
+import { Franchise } from './franchise/franchise';
 
 const routes: Routes = [
   { path: '', component: Home },
   { path: 'home', component: Home },
   { path: 'services', component: Services },
   { path: 'about-us', component: AboutUs },
-  { path: 'contact-us', component: ContactUs }
+  { path: 'contact-us', component: ContactUs },
+  { path: 'franchise', component: Franchise }
 ];
 
 @NgModule({
