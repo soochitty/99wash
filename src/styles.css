@@ -18,12 +18,12 @@ p {
   --icon-color: #dc7704;
   --primary-hover: #8E6582;
   --luxuryText-color: #FFD700;
-  --green-hover: rgb(0, 255, 0);
-  --green-color: rgb(34, 138, 34);
   --secondary-color: #fa9521;
   --background-color: #F8F9FA;
   --text-color: #01439a;
-
+  --green-hover: rgb(0, 255, 0);
+  --green-color: rgb(34, 138, 34);
+  
   /* Typography */
   --font-family: 'Roboto', sans-serif;
   --heading-font-size: 2rem;
@@ -50,6 +50,9 @@ body {
   background-size: cover; */
 }
 
+.row{
+  --bs-gutter-x: 0 !important;
+}
 button {
   background-color: var(--green-color);
   /* Blue */

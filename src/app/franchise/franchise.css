@@ -2,9 +2,25 @@
 .header1 {
   color: var(--text-color);
   font-size: 36px;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
+a.button{
+    background-color: var(--green-color);
+    padding: 10px;
+    border-radius: 8px !important;
+    color: white;
+    text-decoration: none!important;
+}
+.feature-icon{
+    width: 50%;
+}
+.feature-invest {
+    text-align: center;
+    color: #666;
+    padding: 0 10%;
+    font-weight: 700;
+}
 @media only screen and (max-width: 480px) {
 
   /* Styles for small phones */
@@ -72,3 +88,8 @@ textarea {
 .btn-submit:hover {
   background-color: #0056b3;
 }
+
+.row-dark{
+    background-color: #f4f3f3;
+}
+
