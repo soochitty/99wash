@@ -1,6 +1,7 @@
 import { Component, HostListener, ViewChild } from '@angular/core';
 import { Header } from '../shared/header/header';
 import { BookPickUpForm } from '../shared/book-pick-up-form/book-pick-up-form';
+import { SeoService } from '../services/seo.service';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,7 @@ import { BookPickUpForm } from '../shared/book-pick-up-form/book-pick-up-form';
   styleUrl: './home.css'
 })
 export class Home {
+
 
   @ViewChild(BookPickUpForm)
   bookPickupForm!: BookPickUpForm;  
@@ -20,7 +22,15 @@ export class Home {
     { title: 'Section 2', bg: "url('../../assets/Images/back.jpg')" },
   ];
 
-  @HostListener('window:scroll', [])
+
+  constructor(private seo: SeoService) {}
+  ngOnInit() {
+  this.seo.updateTags({
+    title: '99Wash | Best Laundry & Dry Cleaning in Ulwe, Navi Mumbai',
+    description: 'Expert laundry services in Ulwe. We offer wash, iron, and dry cleaning with free pickup and delivery.'
+  });
+}
+
   onScroll() {
     const scrollPos = window.scrollY + window.innerHeight / 2;
     const sectionEls = document.querySelectorAll<HTMLElement>('.sec');

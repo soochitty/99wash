@@ -5,9 +5,9 @@ import { Services } from './services/services';
 import { AboutUs } from './about-us/about-us';
 import { ContactUs } from './contact-us/contact-us';
 import { Franchise } from './franchise/franchise';
-
+import { CommingSoon } from './comming-soon/comming-soon';
 const routes: Routes = [
-  { path: '', component: Home },
+  { path: '', component: CommingSoon },
   { path: 'home', component: Home },
   { path: 'services', component: Services },
   { path: 'about-us', component: AboutUs },

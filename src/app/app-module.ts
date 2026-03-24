@@ -14,6 +14,7 @@ import { SharedModule } from './shared/shared-module';
 import { ReactiveFormsModule } from '@angular/forms'
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { Franchise } from './franchise/franchise';
+import { CommingSoon } from './comming-soon/comming-soon';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { Franchise } from './franchise/franchise';
     AboutUs,
     ContactUs,
     Services,
-    Franchise
+    Franchise,
+    CommingSoon
   ],
   imports: [
     BrowserModule,
