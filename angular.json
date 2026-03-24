@@ -31,7 +31,17 @@
                 "input": "public"
               },
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "sitemap.xml",
+                "input": "src/assets/",
+                "output": "/"
+              },
+              {
+                "glob": "robots.txt",
+                "input": "src/assets/",
+                "output": "/"
+              }
             ],
             "styles": [
               "src/custom-theme.scss",
