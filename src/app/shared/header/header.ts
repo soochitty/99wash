@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output, output } from '@angular/core';
+import { Component, EventEmitter, Output, output, ViewChild } from '@angular/core';
+import { BookPickUpForm } from '../book-pick-up-form/book-pick-up-form';
 
 @Component({
   selector: 'app-header',
@@ -8,5 +9,6 @@ import { Component, EventEmitter, Output, output } from '@angular/core';
 })
 export class Header {
 
-   @Output() openBookNow = new EventEmitter<void>();
+   @ViewChild(BookPickUpForm)
+  bookPickupForm!: BookPickUpForm; 
 }

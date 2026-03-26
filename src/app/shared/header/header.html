@@ -24,7 +24,7 @@
           <a class="nav-link"routerLink="/contact-us">Contact</a>
         </li>
         <li class="nav-item">
-           <button (click)="openBookNow.emit()"  class="header-button button">Book Pick Up!</button>
+           <button (click)="bookPickupForm.openPopup()"  class="header-button button">Book Pick Up!</button>
         </li>
        
         
@@ -50,3 +50,5 @@
     <mat-icon>share</mat-icon>
   </button>
 </mat-toolbar> -->
+
+<app-book-pick-up-form></app-book-pick-up-form>

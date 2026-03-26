@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class Booking {
-  private apiUrl = "http://localhost:5000/api/bookings"; // backend URL
+  private apiUrl = "https://99wash-backend-c94z.vercel.app/api/booking.js"; // backend URL
 
   constructor(public http: HttpClient) {}
 
