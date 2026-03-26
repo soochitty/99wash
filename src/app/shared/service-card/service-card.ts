@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { BookPickUpForm } from '../book-pick-up-form/book-pick-up-form';
 
 @Component({
   selector: 'app-service-card',
@@ -8,6 +9,8 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class ServiceCard {
   @ViewChild('cardContainer') cardContainer!: ElementRef;
+  @ViewChild(BookPickUpForm)
+  bookPickupForm!: BookPickUpForm; 
   private scrollInterval: any;
 
   services = [

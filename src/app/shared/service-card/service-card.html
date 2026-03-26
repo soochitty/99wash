@@ -22,7 +22,7 @@
           <p class="card-text">{{card.description}}</p>
           <div class="card-button"
   >
-            <button href="#" class="button">Book Now</button>
+            <button href="#" class="button" (click)="bookPickupForm.openPopup()" >Book Now</button>
             <a [routerLink]="['/services']" fragment="{{card.link}}">View Rate List</a>
           </div>
         </div>
@@ -31,3 +31,4 @@
 
   </div>
 </div>
+<app-book-pick-up-form></app-book-pick-up-form>

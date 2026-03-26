@@ -1,0 +1,10 @@
+@media only screen and (max-width: 480px) {
+
+  /* Styles for small phones */
+  .comming-soon {
+    background-image: url('../../assets/Images/comming-soon-mobile.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+}                                                                                                   

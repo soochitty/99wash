@@ -29,6 +29,7 @@
             <div class="form-row">
                 <input type="text" formControlName="name" placeholder="Name" />
                 <select formControlName="service" class="form-select" aria-label="Book Time Slot">
+                    <option value="" disabled selected>Select Service</option>
                     <option *ngFor="let service of services" value="service">{{service}}</option>
                 </select>
             </div>

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { BookPickUpForm } from '../shared/book-pick-up-form/book-pick-up-form';
 
 @Component({
   selector: 'app-services',
@@ -6,7 +7,14 @@ import { Component } from '@angular/core';
   templateUrl: './services.html',
   styleUrl: './services.css'
 })
+
+
+  
 export class Services {
+
+  @ViewChild(BookPickUpForm)
+  bookPickupForm!: BookPickUpForm; 
+  
 services = [
   { icon: 'bi bi-iron', title: 'Steam Iron', price: 'Starts @ ₹29/per pc' },
   { icon: 'bi bi-basket', title: 'Wash & Fold', price: '₹99/Kg' },
