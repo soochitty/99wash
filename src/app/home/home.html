@@ -1,4 +1,3 @@
-
 <app-header (openBookNow)="bookPickupForm.openPopup()"></app-header>
 
 <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -8,7 +7,8 @@
       <div class="overlay"></div>
       <div class="carousel-caption">
         <h1>Laundry Made Easy.</h1>
-        <p style="font-size: 20px;">Doorstep laundry & dry cleaning across Mumbai and Navi Mumbai. Pickup. Clean. Deliver.</p>
+        <p style="font-size: 20px;">Doorstep laundry & dry cleaning across Mumbai and Navi Mumbai. Pickup. Clean.
+          Deliver.</p>
         <button class="button" (click)="bookPickupForm.openPopup()">Book Now!</button>
       </div>
     </div>
@@ -17,7 +17,8 @@
       <div class="overlay"></div>
       <div class="carousel-caption">
         <h1>Your Laundry. Our Care.</h1>
-        <p style="font-size: 20px;">Premium washing, dry cleaning & ironing — with fast delivery and guaranteed freshness.</p>
+        <p style="font-size: 20px;">Premium washing, dry cleaning & ironing — with fast delivery and guaranteed
+          freshness.</p>
         <button class="button" (click)="bookPickupForm.openPopup()">Book Now!</button>
 
       </div>
@@ -102,95 +103,103 @@
 <!-- -----------------end  ------------->
 
 <section class="vip-section">
-    <div class="container">
-        <h2 class="vip-title">OUR VIP PLANS</h2>
-        
-        <div class="vip-grid">
-            <div class="vip-card">
-                <div class="vip-header">PAY ₹5,000</div>
-                <div class="vip-body">
-                    <p class="get-text">GET SERVICE WORTH</p>
-                    <h3 class="worth-amount">₹5,500</h3>
-                    <div class="extra-tag">+ 5% EXTRA OFF</div>
-                </div>
-            </div>
+  <div class="container">
+    <h2 class="vip-title">OUR VIP PLANS</h2>
 
-            <div class="vip-card featured">
-                <div class="vip-header">PAY ₹10,000</div>
-                <div class="vip-body">
-                    <p class="get-text">GET SERVICE WORTH</p>
-                    <h3 class="worth-amount">₹12,000</h3>
-                    <div class="extra-tag">+ 5% EXTRA OFF</div>
-                </div>
-            </div>
-
-            <div class="vip-card">
-                <div class="vip-header">PAY ₹20,000</div>
-                <div class="vip-body">
-                    <p class="get-text">GET SERVICE WORTH</p>
-                    <h3 class="worth-amount">₹25,000</h3>
-                    <div class="extra-tag">+ 5% EXTRA OFF</div>
-                </div>
-            </div>
+    <div class="vip-grid">
+      <div class="vip-card">
+        <div class="vip-header">PAY ₹5,000 only</div>
+        <div class="vip-body">
+          <p class="get-text">GET SERVICE WORTH</p>
+          <h3 class="worth-amount">₹5,500</h3>
+          <div class="extra-tag">+ 5% EXTRA OFF </div>
+          <a href="https://wa.me/919136967627?text=I'm%20interested%20in%20the%205000%20VIP%20Plan"
+            class="btn-book">Book This Plan</a>
         </div>
-        <p class="vip-note">*All offers and discounts valid for one year on pre-payment only.</p>
+      </div>
+
+      <div class="vip-card featured">
+        <div class="vip-header">PAY ₹10,000 only</div>
+        <div class="vip-body">
+          <p class="get-text">GET SERVICE WORTH</p>
+          <h3 class="worth-amount">₹12,000</h3>
+          <div class="extra-tag">+ 5% EXTRA OFF</div>
+          <a href="https://wa.me/919136967627?text=I'm%20interested%20in%20the%2010000%20VIP%20Plan"
+            class="btn-book">Book This Plan</a>
+        </div>
+      </div>
+
+      <div class="vip-card">
+        <div class="vip-header">PAY ₹20,000 only</div>
+        <div class="vip-body">
+          <p class="get-text">GET SERVICE WORTH</p>
+          <h3 class="worth-amount">₹25,000</h3>
+          <div class="extra-tag">+ 5% EXTRA OFF</div>
+          <a href="https://wa.me/919136967627?text=I'm%20interested%20in%20the%2020000%20VIP%20Plan"
+            class="btn-book">Book This Plan</a>
+        </div>
+      </div>
     </div>
+
+    <p class="vip-note">*All offers and discounts valid for one year on pre-payment only.</p>
+  </div>
 </section>
 
 <app-offer-marquee></app-offer-marquee>
+<app-service-location></app-service-location>
 <!----------------- our process --------------->
 <section class=" sec process-section container text-center py-5">
   <div>
-  <p class="text-muted" style="font-size: 31px;
+    <p class="text-muted" style="font-size: 31px;
     color: var(--text-color) !important;
     font-weight: bold;">Working Process</p>
-  <h2 class="fw-bold mb-5" style="color: var(--secondary-color) !important;">Our Process in Four Easy Steps</h2>
+    <h2 class="fw-bold mb-5" style="color: var(--secondary-color) !important;">Our Process in Four Easy Steps</h2>
 
-  <div class="row g-4">
-    <div class="col-md-6">
-      <div class="process-card d-flex align-items-center p-3 shadow-sm rounded">
-        <div class="icon-box me-3">
-          <i class="bi bi-basket-fill"></i>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="process-card d-flex align-items-center p-3 shadow-sm rounded">
+          <div class="icon-box me-3">
+            <i class="bi bi-basket-fill"></i>
+          </div>
+          <p class="mb-0 fw-semibold">
+            Step 1 - Gather Your Garments And Bag Them Up.
+          </p>
         </div>
-        <p class="mb-0 fw-semibold">
-          Step 1 - Gather Your Garments And Bag Them Up.
-        </p>
+      </div>
+
+      <div class="col-md-6">
+        <div class="process-card d-flex align-items-center p-3 shadow-sm rounded">
+          <div class="icon-box me-3">
+            <i class="bi bi-truck"></i>
+          </div>
+          <p class="mb-0 fw-semibold">
+            Step 2 - Our Team Picks Up Your Laundry
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="process-card d-flex align-items-center p-3 shadow-sm rounded">
+          <div class="icon-box me-3">
+            <i class="bi bi-stars"></i>
+          </div>
+          <p class="mb-0 fw-semibold">
+            Step 3 - Your Laundry Is Expertly Cleaned By Our Professionals.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="process-card d-flex align-items-center p-3 shadow-sm rounded">
+          <div class="icon-box me-3">
+            <i class="bi bi-house-check"></i>
+          </div>
+          <p class="mb-0 fw-semibold">
+            Step 4 - We Deliver Your Freshly Cleaned And Neatly Folded Clothes Right To Your Doorstep.
+          </p>
+        </div>
       </div>
     </div>
-
-    <div class="col-md-6">
-      <div class="process-card d-flex align-items-center p-3 shadow-sm rounded">
-        <div class="icon-box me-3">
-          <i class="bi bi-truck"></i>
-        </div>
-        <p class="mb-0 fw-semibold">
-          Step 2 - Our Team Picks Up Your Laundry
-        </p>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="process-card d-flex align-items-center p-3 shadow-sm rounded">
-        <div class="icon-box me-3">
-          <i class="bi bi-stars"></i>
-        </div>
-        <p class="mb-0 fw-semibold">
-          Step 3 - Your Laundry Is Expertly Cleaned By Our Professionals.
-        </p>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="process-card d-flex align-items-center p-3 shadow-sm rounded">
-        <div class="icon-box me-3">
-          <i class="bi bi-house-check"></i>
-        </div>
-        <p class="mb-0 fw-semibold">
-          Step 4 - We Deliver Your Freshly Cleaned And Neatly Folded Clothes Right To Your Doorstep.
-        </p>
-      </div>
-    </div>
-  </div>
   </div>
 </section>
 

@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { Testimonial } from './testimonial/testimonial';
 import { OfferMarquee } from './offer-marquee/offer-marquee';
+import { ServiceLocation } from './service-location/service-location';
 
 
 
@@ -22,7 +23,8 @@ import { OfferMarquee } from './offer-marquee/offer-marquee';
     BookPickUpForm,
     ServiceCard,
     Testimonial,
-    OfferMarquee
+    OfferMarquee,
+    ServiceLocation
   ],
   imports: [
     CommonModule,
@@ -36,7 +38,8 @@ import { OfferMarquee } from './offer-marquee/offer-marquee';
     BookPickUpForm,
     ServiceCard,
     Testimonial,
-    OfferMarquee
+    OfferMarquee,
+    ServiceLocation
   ]
 })
 export class SharedModule { }

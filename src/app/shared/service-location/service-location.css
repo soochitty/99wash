@@ -1,0 +1,81 @@
+.location-section {
+    padding: 70px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.location-title {
+    color: var(--primary-blue, #004a99);
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.location-subtitle {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.location-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    border-bottom: 4px solid transparent;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    border-bottom-color: var(--accent-orange, #f39221);
+}
+
+.location-card.primary {
+    background-color: #fff5eb;
+    border: 1px solid rgba(243, 146, 33, 0.3);
+    border-bottom: 4px solid #f39221;
+}
+
+.pin-icon {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.location-card h3 {
+    margin: 0 0 8px 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.location-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.location-footer {
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.location-footer a {
+    color: #28a745;
+    text-decoration: none;
+    border-bottom: 2px solid #28a745;
+}
+
+@media (max-width: 600px) {
+    .location-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns on mobile */
+    }
+}

@@ -192,3 +192,39 @@ h2 {
         transform: translateY(-10px);
     }
 }
+.btn-book {
+    display: block;
+    margin-top: 25px;
+    padding: 12px 20px;
+    background-color: var(--primary-blue);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.btn-book:hover {
+    background-color: #144675; /* Slightly darker blue */
+    transform: scale(1.02);
+    color: #fff;
+}
+
+/* Make the featured plan button stand out with the orange theme */
+.featured .btn-book {
+    background-color: var(--accent-orange);
+}
+
+.featured .btn-book:hover {
+    background-color: #d97e1a; /* Slightly darker orange */
+}
+
+/* Ensure the body of the card spreads out to push the button to the bottom */
+.vip-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

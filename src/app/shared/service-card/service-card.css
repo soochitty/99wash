@@ -145,3 +145,134 @@ sub {
         margin-bottom: 10px !important;
     }
 }
+
+
+
+/* new css */
+
+
+.services-section {
+    background-color: var(--text-color);
+    padding: 80px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--brand-orange);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.price-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #fff5eb;
+    color: var(--brand-orange);
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: 1px solid rgba(243, 146, 33, 0.2);
+}
+
+.service-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.service-icon-wrapper img {
+    width: 100%;
+    height: auto;
+    /* filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.1)); */
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    color: var(--brand-blue);
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.service-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-primary {
+    background: #28a745; /* Green as per your current UI */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: #218838;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+.btn-link {
+    color: var(--brand-blue);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+}
+
+.btn-link:hover {
+    border-bottom: 1px solid var(--brand-blue);
+}

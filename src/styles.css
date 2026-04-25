@@ -28,7 +28,16 @@ p {
     --accent-orange: #f39221;
     --dark-text: #333;
     --light-bg: #f9f9f9;
+    --brand-blue: #004a99;
+    --brand-orange: #f39221;
+    --text-main: #2d3436;
+    --text-light: #636e72;
   
+     --teal: #00acc1;
+    --orange: #f57c00;
+    --dark-blue: #0d47a1;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
   /* Typography */
   --font-family: 'Roboto', sans-serif;
   --heading-font-size: 2rem;
