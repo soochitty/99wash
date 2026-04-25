@@ -23,6 +23,11 @@ p {
   --text-color: #01439a;
   --green-hover: rgb(0, 255, 0);
   --green-color: rgb(34, 138, 34);
+
+  --primary-blue: #1a5a96;
+    --accent-orange: #f39221;
+    --dark-text: #333;
+    --light-bg: #f9f9f9;
   
   /* Typography */
   --font-family: 'Roboto', sans-serif;

@@ -66,6 +66,7 @@ Name: ${this.pickupForm.value.name}
 Service: ${this.pickupForm.value.service}
 PickupDate: ${this.pickupForm.value.pickupDate}
 Pickup Address: ${this.pickupForm.value.address}
+timeSlot: ${this.pickupForm.value.timeSlot}
 Garments: ${this.pickupForm.value.laundryItems}.
   `;
 

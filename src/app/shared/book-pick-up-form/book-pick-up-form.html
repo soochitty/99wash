@@ -8,7 +8,7 @@
         <h2 class="title">Book your laundry with us now</h2>
         <p class="subtitle">
             For a quick booking Call or WhatsApp us on our registered number or fill up the form below
-            to schedule your pickup on same day in Navi Mumbai & Mumbai.
+            to schedule your pickup on same day in Navi Mumbai.
         </p>
 
         <div class="contact-options">
@@ -30,7 +30,7 @@
                 <input type="text" formControlName="name" placeholder="Name" />
                 <select formControlName="service" class="form-select" aria-label="Book Time Slot">
                     <option value="" disabled selected>Select Service</option>
-                    <option *ngFor="let service of services" value="service">{{service}}</option>
+                    <option *ngFor="let service of services" value="{{service}}">{{service}}</option>
                 </select>
             </div>
             <div class="form-row">
@@ -38,7 +38,7 @@
 
                 <select formControlName="timeSlot" class="form-select" aria-label="Book Time Slot">
                     <option value="" disabled selected>Select Time Slot</option>
-                    <option *ngFor="let time of timeSlot" value="time">{{time}}</option>
+                    <option *ngFor="let time of timeSlot" value="{{time}}">{{time}}</option>
                 </select>
             </div>
 
