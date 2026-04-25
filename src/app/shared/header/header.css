@@ -6,12 +6,12 @@
 
 .navbar {
     display: flex;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     justify-content: space-between;
-    background-color: var(--primary-color);
-    height: auto !important;
-    padding: 0% !important;
-    color: white;
+    background-color: white;
+    /* height: auto !important;
+    padding: 0% !important; */
+    padding: 10px 15px;
     position:relative;
 }
 
@@ -32,7 +32,8 @@ color: #fa9521;
 
 .logoImag {
     position: relative;
-    width: 50%;
+    width: 120px;
+    max-width: 100%;
 }
 
 .spacer {
@@ -59,8 +60,16 @@ color: #fa9521;
     font-weight: bold !important;
 }
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
 
-  /* Styles for small phones */
- 
+  .nav-item {
+    margin: 5px 0;
+  }
+
+  .header-button {
+    width: 100%;
+  }
 }
