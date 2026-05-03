@@ -7,7 +7,7 @@ import { ContactUs } from './contact-us/contact-us';
 import { Franchise } from './franchise/franchise';
 import { CommingSoon } from './comming-soon/comming-soon';
 const routes: Routes = [
-  { path: '', component: CommingSoon },
+  { path: '', component: Home },
   { path: 'home', component: Home },
   { path: 'services', component: Services },
   { path: 'about-us', component: AboutUs },

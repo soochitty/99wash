@@ -23,13 +23,13 @@ services = [
 ];
 
 mensClothes = [
-  { name: 'Shirts', price: '₹99 / ₹29' },
+  { name: 'Shirts', price: '₹99 / ₹19' },
   { name: 'Premium Shirts', price: '₹149 / ₹49' },
-  { name: 'T-Shirts', price: '₹99 / ₹29' },
-  { name: 'Pants', price: '₹99 / ₹29' },
-  { name: 'Joggers', price: '₹99 / ₹29' },
-  { name: 'Jeans', price: '₹99 / ₹29' },
-  { name: 'Shorts', price: '₹79 / ₹29' },
+  { name: 'T-Shirts', price: '₹99 / ₹19' },
+  { name: 'Pants', price: '₹99 / ₹19' },
+  { name: 'Joggers', price: '₹99 / ₹19' },
+  { name: 'Jeans', price: '₹99 / ₹19' },
+  { name: 'Shorts', price: '₹79 / ₹19' },
   { name: 'Kurta (S,M,L)', price: '₹99,₹149,₹199 / ₹49' },
    { name: 'Kurta Pyjama Set', price: '₹149' },
   { name: 'Pyjama', price: '₹99 / ₹69' },
@@ -48,21 +48,22 @@ mensClothes = [
   { name: 'Designer Sherwani', price: '₹399 / ₹149' },
   { name: 'Winter Jacket', price: '₹249 / ₹49' },
   { name: 'Leather Jacket', price: '₹399' },
-  { name: 'Kids Wear', price: '₹99 / ₹29' },
-  { name: 'Tie', price: '₹99 / ₹29' },
-  { name: 'Mufflers', price: '₹99 / ₹29' },
+  { name: 'Kids Wear', price: '₹99 / ₹19' },
+  { name: 'Tie', price: '₹99 / ₹19' },
+  { name: 'Mufflers', price: '₹99 / ₹19' },
   { name: 'Cap', price: '₹99' },
-  { name: 'Hand Gloves', price: '₹99 / ₹29' }
+  { name: 'Hand Gloves', price: '₹99 / ₹19' }
 ];
 
 
 womensClothes  = [
-  { name: 'Shirts/T-shirts/Blouses', price: '₹99 / ₹29' },
+  { name: 'Shirts/T-shirts', price: '₹99 / ₹19' },
+  { name: 'Blouses', price: '₹99 / ₹29' },
   { name: 'Designer Blouses', price: '₹149 / ₹49' },
-  { name: 'Trousers', price: '₹99 / ₹29' },
-  { name: 'Legging', price: '₹99 / ₹29' },
-  { name: 'Jeans', price: '₹99 / ₹29' },
-  { name: 'Pyjama', price: '₹99 / ₹29' },
+  { name: 'Trousers', price: '₹99 / ₹19' },
+  { name: 'Legging', price: '₹99 / ₹19' },
+  { name: 'Jeans', price: '₹99 / ₹19' },
+  { name: 'Pyjama', price: '₹99 / ₹19' },
   { name: 'Kurta Plain', price: '₹99 / ₹39' },
   { name: 'Kurta Heavy', price: '₹199 / ₹69' },
   { name: 'Designer Kurta', price: '₹199 / ₹69' },
@@ -72,9 +73,9 @@ womensClothes  = [
   { name: 'Palazo', price: '₹99 / ₹39' },
   { name: 'Shrug', price: '₹149 / ₹49' },
   { name: 'Patticoat', price: '₹99 / ₹39' },
-  { name: 'Dupatta', price: '₹99 / ₹29' },
+  { name: 'Dupatta', price: '₹99 / ₹19' },
   { name: 'Dupatta Heavy', price: '₹149 / ₹39' },
-  { name: 'Scarf', price: '₹99 / ₹29' },
+  { name: 'Scarf', price: '₹99 / ₹19' },
   { name: 'Shawl', price: '₹199 / ₹49' },
   { name: 'Night Gowns', price: '₹99 / ₹49' },
   { name: 'Gowns', price: '₹399 / ₹99' },
@@ -94,7 +95,7 @@ womensClothes  = [
   { name: 'Designer Gaghra', price: '₹399 / ₹199' },
   { name: 'Anarkali', price: '₹199 / ₹99' },
   { name: 'Designer Anarkali', price: '₹299 / ₹149' },
-  { name: 'Vest', price: '₹49 / ₹29' }
+  { name: 'Vest', price: '₹49 / ₹19' }
 ];
 
 
