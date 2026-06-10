@@ -12,7 +12,7 @@ export class App {
 constructor(private titleService: Title, private metaService: Meta) {}
   ngOnInit() {
     // 1. The Title is what shows up in Google Search results
-    this.titleService.setTitle('99Wash | Best Laundry & Dry Cleaners in Ulwe, Navi Mumbai');
+    this.titleService.setTitle('99Wash | Best Laundry & Dry Cleaners in Ulwe, Navi Mumbai | 25% off on your First order');
 
     // 2. The Description is the snippet below the title in Google
     this.metaService.addTags([
