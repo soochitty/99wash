@@ -26,7 +26,7 @@ export class Home {
   constructor(private seo: SeoService) {}
   ngOnInit() {
   this.seo.updateTags({
-    title: '99Wash | Best Laundry & Dry Cleaning in Ulwe, Navi Mumbai',
+    title: '99Wash | Best Laundry & Dry Cleaning in Ulwe, Navi Mumbai |25% off on First Order and 10% off on every Dryclean Order',
     description: 'Expert laundry services in Ulwe. We offer wash, iron, and dry cleaning with free pickup and delivery.'
   });
 }
