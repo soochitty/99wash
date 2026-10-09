@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
 import { Testimonial } from './testimonial/testimonial';
 import { OfferMarquee } from './offer-marquee/offer-marquee';
 import { ServiceLocation } from './service-location/service-location';
+import { Review } from './review/review';
 
 
 
@@ -24,7 +25,8 @@ import { ServiceLocation } from './service-location/service-location';
     ServiceCard,
     Testimonial,
     OfferMarquee,
-    ServiceLocation
+    ServiceLocation,
+    Review
   ],
   imports: [
     CommonModule,
@@ -39,7 +41,8 @@ import { ServiceLocation } from './service-location/service-location';
     ServiceCard,
     Testimonial,
     OfferMarquee,
-    ServiceLocation
+    ServiceLocation,
+    Review
   ]
 })
 export class SharedModule { }

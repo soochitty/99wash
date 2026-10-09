@@ -22,6 +22,14 @@ export class Home {
     { title: 'Section 2', bg: "url('../../assets/Images/back.jpg')" },
   ];
 
+  trustItems = [
+    'Quality Garment Care',
+    'Affordable Prices',
+    'Convenient Pickup & Delivery',
+    'Careful Handling of Every Garment'
+  ];
+
+  
 
   constructor(private seo: SeoService) {}
   ngOnInit() {
@@ -30,6 +38,7 @@ export class Home {
     description: 'Expert laundry services in Ulwe. We offer wash, iron, and dry cleaning with free pickup and delivery.'
   });
 }
+
 
   onScroll() {
     const scrollPos = window.scrollY + window.innerHeight / 2;

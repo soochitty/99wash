@@ -3,7 +3,7 @@
 </div> -->
 <app-offer-marquee></app-offer-marquee>
 
-<nav class="navbar navbar-expand-lg navbar-light ">
+<!-- <nav class="navbar navbar-expand-lg navbar-light ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><span class="logo"><img src="./../../../assets/Images/logo.png" class="logoImag"></span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,7 @@
       
     </div>
   </div>
-</nav>
+</nav> -->
 <!-- <mat-toolbar class="navbar">
 
   <span class="logo"><img src="./../../../assets/Images/99wasg.png" class="logoImag"></span>
@@ -50,5 +50,66 @@
     <mat-icon>share</mat-icon>
   </button>
 </mat-toolbar> -->
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="brand" href="/" aria-label="99Wash home">
+      <img src="./../../../assets/Images/logo.png" alt="99Wash Laundry and Dry Clean">
+    </a>
+
+
+<nav class="desktop-nav" aria-label="Main navigation">
+  <a href="/">Home</a>
+  <a href="/services">Services</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#how-it-works">How It Works</a>
+  <a href="#why-99wash">Why 99Wash</a>
+  <a href="/contact-us">Contact</a>
+</nav>
+
+<a class="button button-primary header-book" href="#booking" >
+  Book a Pickup
+</a>
+
+<button
+  class="menu-toggle"
+  type="button"
+  [attr.aria-expanded]="openMenu"
+  [attr.aria-label]="openMenu ? 'Close navigation menu' : 'Open navigation menu'"
+  aria-controls="wash-mobile-nav"
+  (click)="toggleMenu()">
+
+  <svg viewBox="0 0 24 24" fill="none"
+       stroke="currentColor" stroke-width="1.8"
+       stroke-linecap="round">
+    <path *ngIf="!openMenu" d="M4 7h16M4 12h16M4 17h16"></path>
+    <path *ngIf="openMenu" d="m6 6 12 12M18 6 6 18"></path>
+  </svg>
+</button>
+
+  </div>
+
+  <nav
+    class="mobile-nav"
+    id="wash-mobile-nav"
+    aria-label="Mobile navigation"
+    *ngIf="openMenu">
+
+
+<a href="/" (click)="closeMenu()">Home</a>
+<a href="/services" (click)="closeMenu()">Services</a>
+<a href="#pricing" (click)="closeMenu()">Pricing</a>
+<a href="#how-it-works" (click)="closeMenu()">How It Works</a>
+<a href="#why-99wash" (click)="closeMenu()">Why 99Wash</a>
+<a href="/contact-us" (click)="closeMenu()">Contact</a>
+
+<a class="mobile-book" (click)="closeMenu();bookPickupForm.openPopup()">
+  Book a Pickup
+</a>
+
+
+  </nav>
+</header>
+
+
 
 <app-book-pick-up-form></app-book-pick-up-form>

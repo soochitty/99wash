@@ -1,75 +1,420 @@
-.offer{
-    text-align: center;
-    background-color: #460132;
-    color: white;
-}
 
-.navbar {
-    display: flex;
-    /* flex-wrap: nowrap; */
-    justify-content: space-between;
-    background-color: white;
-    /* height: auto !important;
-    padding: 0% !important; */
-    padding: 10px 15px;
-    position:relative;
-}
+    .site-header {
+      position: relative;
+      z-index: 10;
+      background: #fff;
+      border-bottom: 1px solid rgba(12, 53, 101, .08)
+    }
 
-.nav-link {
-    font-weight: bold;
-color: #0d4b90;    
-font-size: 20px;
-}
+    .nav-row {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px
+    }
 
-.navbar-nav .nav-link.active {
-color: #fa9521;   
-}
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0
+    }
 
-.logo {
-    font-weight: bold;
-    font-size: 1.5em;
-}
+    .brand img {
+      display: block;
+      width: 156px;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain
+    }
 
-.logoImag {
-    position: relative;
-    width: 120px;
-    max-width: 100%;
-}
+    .brand-fallback {
+      display: none;
+      font-size: 25px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -.06em
+    }
 
-.spacer {
-    flex: 1 1 auto;
-}
+    .brand-fallback span {
+      color: #f28c28
+    }
 
-.nav-item{
-    margin: 10px;
-    font-size: 18px;
-    padding: 10px;
-}
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(16px, 2.2vw, 30px);
+      margin-left: auto
+    }
 
-.nav-item:hover {
-    color: var(--primary-hover);
-    cursor: pointer;
-    font-weight: 600;
-}
+    .desktop-nav a {
+        text-decoration: none;
+      color: #33465c;
+      font-size: 13px;
+      font-weight: 600;
+      transition: color .2s;
+      white-space: nowrap
+    }
 
-.header-button {
-  white-space: nowrap;  /* Prevent text from wrapping */
-  padding: 8px 16px;    /* Give enough space inside button */
-  display: inline-block;
-      font-size: 20px !important;
-    font-weight: bold !important;
-}
+    .desktop-nav a:hover {
+      color: #d96e0c
+    }
 
-@media (max-width: 768px) {
-  .navbar-nav {
-    text-align: center;
-  }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 48px;
+      padding: 13px 21px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform .2s, background .2s, box-shadow .2s;
+      text-align: center;
+      text-decoration: none;
+    }
 
-  .nav-item {
-    margin: 5px 0;
-  }
+    .button:hover {
+      transform: translateY(-2px)
+    }
 
-  .header-button {
-    width: 100%;
-  }
-}
+    .button-primary {
+      color: #fff;
+      background: #f28c28;
+      box-shadow: 0 7px 16px rgba(242, 140, 40, .18)
+    }
+
+    .button-primary:hover {
+      background: #d96e0c
+    }
+
+    .button-outline {
+      color: var(--navy);
+      background: #fff;
+      border-color: #cfd9e4
+    }
+
+    .button-outline:hover {
+      border-color: var(--navy);
+      background: #f7f9fc
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      color: var(--navy);
+      cursor: pointer
+    }
+
+    .menu-toggle svg {
+      width: 22px;
+      height: 22px
+    }
+
+    .mobile-nav {
+      padding: 8px 24px 20px;
+      border-top: 1px solid var(--line);
+      background: #fff
+    }
+
+    .mobile-nav a {
+        text-decoration: none;
+      display: block;
+      padding: 13px 4px;
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 600;
+      border-bottom: 1px solid #edf0f4
+    }
+
+    .mobile-nav .mobile-book {
+      display: block;
+      margin-top: 14px;
+      padding: 13px 16px;
+      color: #fff;
+      background: #f28c28;
+      border: 0;
+      border-radius: 9px;
+      text-align: center
+    }
+
+    .mobile-nav.is-open {
+      display: block
+    }
+
+      @media(max-width:1050px) {
+      .desktop-nav {
+        gap: 15px
+      }
+
+      .desktop-nav a {
+        font-size: 12px
+      }
+
+      .brand img {
+        width: 140px
+      }
+
+      .header-book {
+        padding-inline: 15px
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+      }
+
+      .benefit-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px
+      }
+    }
+
+    @media(max-width:800px) {
+      .container {
+        width: min(calc(100% - 36px), 620px)
+      }
+
+      .nav-row {
+        min-height: 72px;
+        gap: 14px
+      }
+
+      .desktop-nav,
+      .header-book {
+        display: none
+      }
+
+      .menu-toggle {
+        display: inline-grid;
+        place-items: center
+      }
+
+      .brand img {
+        width: 145px
+      }
+
+      .hero {
+        padding: 45px 0 54px
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 34px
+      }
+
+      .hero-copy {
+        max-width: none;
+        text-align: center
+      }
+
+      .eyebrow {
+        justify-content: center
+      }
+
+      .hero h1 {
+        margin-inline: auto;
+        font-size: clamp(36px, 8vw, 52px)
+      }
+
+      .hero-description {
+        margin-inline: auto
+      }
+
+      .hero-actions,
+      .hero-checks {
+        justify-content: center
+      }
+
+      .hero-visual {
+        width: min(100%, 560px);
+        margin: 0 auto;
+        padding-left: 12px
+      }
+
+      .hero-photo {
+        height: clamp(270px, 68vw, 390px);
+        border-radius: 18px
+      }
+
+      .floating-note {
+        left: -2px;
+        bottom: 34px
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px 6px
+      }
+
+      .trust-item {
+        justify-content: flex-start;
+        padding: 5px 0
+      }
+
+      .trust-icon {
+        width: 38px;
+        height: 38px
+      }
+
+      .steps {
+        gap: 14px
+      }
+
+      .step {
+        padding: 22px
+      }
+
+      .cta-panel {
+        align-items: flex-start;
+        flex-direction: column
+      }
+    }
+
+    @media(max-width:520px) {
+      .container {
+        width: calc(100% - 32px)
+      }
+
+      .announcement {
+        font-size: 10px;
+        padding: 9px 10px
+      }
+
+      .brand img {
+        width: 132px
+      }
+
+      .hero {
+        padding-top: 38px
+      }
+
+      .hero h1 {
+        font-size: clamp(34px, 9vw, 43px)
+      }
+
+      .hero-description {
+        font-size: 14px;
+        line-height: 1.75
+      }
+
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%
+      }
+
+      .hero-actions .button {
+        width: 100%
+      }
+
+      .hero-checks {
+        gap: 10px 14px
+      }
+
+      .hero-checks li {
+        font-size: 11px
+      }
+
+      .hero-visual {
+        padding-left: 0;
+        padding-bottom: 13px
+      }
+
+      .hero-photo {
+        height: 270px
+      }
+
+      .photo-accent {
+        right: -5px;
+        width: 45%;
+        height: 34%
+      }
+
+      .floating-note {
+        left: 8px;
+        bottom: 24px;
+        max-width: 215px;
+        padding: 11px 12px
+      }
+
+      .floating-icon {
+        width: 36px;
+        height: 36px
+      }
+
+      .trust-strip {
+        padding: 17px 0
+      }
+
+      .trust-grid {
+        gap: 12px 8px
+      }
+
+      .trust-item {
+        gap: 8px
+      }
+
+      .trust-item strong {
+        font-size: 11px
+      }
+
+      .trust-item span {
+        font-size: 10px
+      }
+
+      .section {
+        padding: 58px 0
+      }
+
+      .section-heading {
+        margin-bottom: 28px
+      }
+
+      .section-heading p {
+        font-size: 14px
+      }
+
+      .service-grid,
+      .benefit-grid,
+      .steps {
+        grid-template-columns: 1fr
+      }
+
+      .service-card {
+        padding: 22px
+      }
+
+      .benefit {
+        display: grid;
+        grid-template-columns: 43px 1fr;
+        column-gap: 14px
+      }
+
+      .benefit-number {
+        grid-row: span 2;
+        margin-bottom: 0
+      }
+
+      .benefit h3 {
+        margin-bottom: 5px
+      }
+
+      .cta-panel {
+        padding: 28px 22px;
+        border-radius: 17px
+      }
+
+      .cta-panel .button {
+        width: 100%
+      }
+    }

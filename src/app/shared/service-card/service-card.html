@@ -1,27 +1,37 @@
 
-<section class="services-section">
-    <div class="container">
-        <div class="services-header">
-            <h2 class="section-title">99 WASH Services</h2>
-            <p class="section-subtitle">Premium laundry and dry cleaning with doorstep pickup and delivery across Mumbai & Navi Mumbai.</p>
+<section class="wash-services" aria-labelledby="services-title">
+  <div class="services-container">
+    <header class="services-header">
+      <p class="eyebrow">99WASH LAUNDRY & DRY CLEANING</p>
+
+      <h2 id="services-title">Our Premium Laundry Services</h2>
+
+      <span class="heading-accent" aria-hidden="true"></span>
+
+      <p class="services-subtitle">
+        Expert garment care, convenient doorstep pickup and delivery across
+        Mumbai and Navi Mumbai.
+      </p>
+    </header>
+
+    <div class="services-grid">
+      <!-- Steam Iron -->
+      <article class="service-card" *ngFor="let card of services">
+        <div class="service-icon service-icon-wrapper" aria-hidden="true">
+          <img [src]="card.image" alt="{{card.title}}">
         </div>
 
-        <div class="services-grid">
-            <div class="service-card" *ngFor="let card of services">
-                <div class="price-badge">Starts ₹{{card.price}}<span>/{{card.unit}}</span></div>
-                <div class="service-icon-wrapper">
-                    <img [src]="card.image" alt="{{card.title}}">
-                </div>
-                <h3>{{card.title}}</h3>
-                <p>{{card.description}}</p>
-                <div class="card-footer">
-                    <a  (click)="bookPickupForm.openPopup()" class="btn-primary">Book Now</a>
-                    <a [routerLink]="['/services']" fragment="{{card.link}}" class="btn-link">View Rate List</a>
-                </div>
-            </div>
+        <h3>{{card.title}}</h3>
+        <p>{{card.description}}</p>
 
-            
+        <strong class="service-price">Starts ₹{{card.price}}<span>/{{card.unit}}</span></strong>
+
+        <div class="service-actions">
+          <a [routerLink]="['/services']" fragment="{{card.link}}" class="rate-link">View Rate List</a>
+          <a (click)="bookPickupForm.openPopup()" class="book-button">Book Now</a>
         </div>
+      </article>
     </div>
+  </div>
 </section>
 <app-book-pick-up-form></app-book-pick-up-form>

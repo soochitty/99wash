@@ -13,5 +13,13 @@ export class Header {
    @ViewChild(BookPickUpForm)
   bookPickupForm!: BookPickUpForm; 
 
+ openMenu = false;
 
+  toggleMenu(): void {
+    this.openMenu = !this.openMenu;
+  }
+
+  closeMenu(): void {
+    this.openMenu = false;
+  }
 }
